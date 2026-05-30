@@ -1,5 +1,5 @@
 
-CREATE PROCEDURE usp_GetTodaysSales
+CREATE PROCEDURE [dbo].[usp_GetTodaysSales]
 AS
 BEGIN
     SET NOCOUNT ON;
