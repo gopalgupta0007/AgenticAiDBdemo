@@ -1,5 +1,9 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
 
-CREATE PROCEDURE [dbo].[usp_GetTodaysSales]
+ALTER PROCEDURE [dbo].[usp_GetTodaysSales]
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -15,9 +19,3 @@ BEGIN
         AND PaymentStatus = 'Paid';
 END;
 GO
-
-GRANT EXECUTE
-    ON OBJECT::[dbo].[usp_GetTodaysSales] TO [agent_reader]
-    AS [dbo];
-GO
-
